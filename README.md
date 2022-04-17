@@ -60,7 +60,6 @@ cmake -H. -B_build && cmake --build _build
 * *solver*, приложение которое испольует статические библиотеки *formatter_ex* и *solver_lib*.
 
 ```bash
-cd ../hello_world_application
 vim CMakeLists.txt
 ```
 ```cmake
@@ -91,7 +90,6 @@ add_library(formatter STATIC ${CMAKE_CURRENT_SOURCE_DIR}/solver.h ${CMAKE_CURREN
 ```
 ```bash
 cmake -H. -B_build && cmake --build _build
-cd ../solver_application
 vim CMakeLists.txt
 ```
 ```cmake
